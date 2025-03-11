@@ -1,0 +1,317 @@
+/* General styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #1a1a1a !important;
+    padding: 1rem 0;
+}
+
+.nav-logo {
+    height: 40px;
+    width: auto;
+}
+
+.brand-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffffff;
+}
+
+/* Button styles */
+.btn-primary, 
+.navbar-dark .navbar-nav .nav-link.btn-primary {
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    color: white !important;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.2);
+}
+
+.btn-primary:hover,
+.navbar-dark .navbar-nav .nav-link.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+}
+
+.btn-outline-primary {
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    color: #3498db;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+}
+
+/* Hero section */
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.hero-section h1 {
+    font-weight: 600;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section .form-select,
+.hero-section .form-control {
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.hero-section .form-select:focus,
+.hero-section .form-control:focus {
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
+}
+
+/* Feature cards */
+.feature-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2);
+}
+
+.feature-card .card-body {
+    padding: 2rem;
+}
+
+.feature-card .text-primary {
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Forms */
+.login-form,
+.registration-form {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    max-width: 400px;
+}
+
+.booking-form,
+.check-form,
+.checkin-form {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 2.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    border-color: #3498db;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+/* Flight and booking details */
+.booking-details,
+.flight-details {
+    margin-top: 30px;
+    padding: 2rem;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.flight-details {
+    background: linear-gradient(to right, #faf9f8, #ffffff);
+}
+
+.flight-details:hover {
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
+}
+
+/* Footer */
+footer {
+    background: #1a1a1a !important;
+}
+
+footer h5 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer .social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+footer .social-links a:hover {
+    background: linear-gradient(45deg, #3498db, #2ecc71);
+    transform: translateY(-2px);
+}
+
+/* Fixed positioning for pages with forms */
+body.has-fixed-nav {
+    padding-top: 80px;
+}
+
+/* Popular Destinations */
+.destination-card {
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.destination-card:hover {
+    transform: translateY(-5px);
+}
+
+.destination-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.destination-card .card-body {
+    padding: 1.5rem;
+}
+
+.price-tag {
+    color: #666;
+}
+
+.price-tag small {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.price-tag .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.card-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.card-text {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.9rem;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+    transform: translateY(-1px);
+}
+
+/* Section Styling */
+.popular-destinations {
+    background-color: #f8f9fa;
+    padding: 5rem 0;
+}
+
+.popular-destinations h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.popular-destinations h2:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 1rem auto 0;
+} 
